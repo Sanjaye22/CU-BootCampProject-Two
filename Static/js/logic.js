@@ -6,8 +6,6 @@ d3.csv("../../Data/FinalCleanedData.csv", function(ACAData) {
 });
 
 
-// Create map
-  var myMap = L.map("map").setView([37.09, -95.71], 5);
   
   // Adding a tile layer (the background map image) to our map
   // We use the addTo method to add objects to our map
@@ -18,4 +16,8 @@ d3.csv("../../Data/FinalCleanedData.csv", function(ACAData) {
     tileSize: 512,
     zoomOffset: -1,
     accessToken: API_KEY
-  });
+  }).addTo(myMap);
+
+  
+// Create map
+var myMap = L.map("map").setView([37.09, -95.71], 5);
