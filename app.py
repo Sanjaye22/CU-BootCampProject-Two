@@ -10,7 +10,7 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine(f'postgresql://postgres:{password}@localhost/ACA Infant Mortality_db')
+engine = create_engine(f'postgresql://postgres:{password}@localhost/ACA_Infant_Mortality_db')
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -46,7 +46,7 @@ def Homepage():
     f"/api/v1.0/startdate/endddate"
     ) 
 
-@app.route("/api/v1.0/Births:2010 VS 2015")
+@app.route("/Births")
 def Births():
     # Create our session (link) from Python to the DB
     session = Session(engine)
@@ -67,8 +67,8 @@ def Births():
 
     return jsonify (prcp_date_list)
 
-@app.route("/api/v1.0/Deaths:2010 VS 2015")
-def stations():
+@app.route("/Deaths")
+def Deaths():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
@@ -87,8 +87,8 @@ def stations():
 
     return jsonify (station_list)
 
-@app.route("/api/v1.0/Uninsured")
-def tobs():
+@app.route("/Uninsured")
+def uninsured():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
