@@ -22,3 +22,9 @@
     margin-right: 8px;
     opacity: 0.7;
   }
+
+  
+/* set map, body, and html to 100% of the screen size */
+#map {
+  height: 800px;
+}
