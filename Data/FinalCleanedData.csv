@@ -1,4 +1,4 @@
-State,Deaths (2010),Births (2010),Death Per 1000 (2010),Deaths (2015),Births (2015),Death Per 1000 (2015),Latitude,Longitude,Uninsured Rate (2010),Uninsured Rate (2015),Uninsured Rate Change (2010-2015)
+State,Deaths (2010),Births (2010),Death Per 1000 (2010),Deaths (2015),Births (2015),Death Per 1000 (2015),Latitude,Longitude,Uninsured Rate % (2010),Uninsured Rate % (2015),Uninsured Rate Change % (2010-2015)
 Alabama,524,60050,8,524,60050,8,32,-86,14,10,-4
 Alaska,41,11471,3,41,11471,3,63,-154,19,14,-5
 Arizona,520,87477,5,520,87477,5,34,-111,16,10,-6
