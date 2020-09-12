@@ -1,5 +1,5 @@
-d3.csv("../../Data/FinalCleanedData.csv", function(ACAData) {  
-  console.log(ACAData);
+d3.csv("../../Data/FinalCleanedData.csv", function(acaData) {  
+  console.log(acaData);
 });
 
 // Create map
