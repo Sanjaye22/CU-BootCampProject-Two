@@ -1,6 +1,9 @@
-d3.csv("../../Data/ACAData.csv", function(acaData) {  
+
+var url = `../../Data/acadata.json`;
+
+d3.json(url), function (acaData) {
   console.log(acaData);
-});
+};
 
 // Create map
 var myMap = L.map("map").setView([37.09, -95.71], 5);
