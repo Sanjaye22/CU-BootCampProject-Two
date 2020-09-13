@@ -1,9 +1,7 @@
 
-var url = `../../Data/acadata.json`;
-
-d3.json(url), function (acaData) {
+d3.json("../../Data/acadata.json").then(function(acaData) {  
   console.log(acaData);
-};
+});
 
 // Create map
 var myMap = L.map("map").setView([37.09, -95.71], 5);
