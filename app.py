@@ -10,7 +10,7 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine(f'postgresql://postgres:{password}@localhost/ACA_Infant_Mortality_db')
+engine = create_engine(f'postgresql://postgres:{password}@localhost/ACA Infant Mortality_db')
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -18,9 +18,9 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save reference to the table
-Measurement = Base.classes.measurement
-Station = Base.classes.station
-
+States = Base.classes.states
+Births = Base.classes.births
+Deaths= Base.classes.deaths
 #################################################
 # Flask Setup
 from flask import Flask
@@ -28,122 +28,104 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def Homepage():
-    """List all available api routes."""
+def homepage():
 
-    return (
-    f"Available Routes:<br/>"
-    f"----------------------------------------------------------------------------------------<br/>"
-    f"Births by date<br/>"
-    f"/api/v1.0/birth<br/>"
-    f"-----------------------------------------------------------------------------------------<br/>"
-    f"Deaths by date <br/>"
-    f"/api/v1.0/date<br/>"
-    f"------------------------------------------------------------------------------------------<br/>"
-    f"Uninsured by date<br/>"
-    f"/api/v1.0/uninsured/>"
-    f"------------------------------------------------------------------------------------------<br/>"
-    f"/api/v1.0/startdate/endddate"
-    ) 
+    # Render an index.html template and pass in the data retrieved from the database
+    aca = session.query()
+    return render_template("index.html")
 
-@app.route("/Births")
-def Births():
+@app.route("/births")
+def births():
     # Create our session (link) from Python to the DB
     session = Session(engine)
     
-    # Query for the dates and precipitation values
-    prcp_results = session.query(Measurement.date, Measurement.prcp).\
-         group_by (Measurement.prcp).order_by(Measurement.date).all()
+    # Query for the dates and births by states and dates
+    birth_results = session.query(States.name, States.births).\
+         group_by (States.name).order_by(States.births).all()
     
     session.close()
 
      # Convert to list of dictionaries to jsonify
-    prcp_date_list = []
+    birth_list = []
 
-    for date, prcp in prcp_results:
+    for births in birth_results:
         new_dict = {}
-        new_dict[date] = prcp
-        prcp_date_list.append(new_dict)
+        new_dict[birth] = states
+        birth_list.append(new_dict)
 
-    return jsonify (prcp_date_list)
+    return jsonify (birth_list)
 
-@app.route("/Deaths")
-def Deaths():
+@app.route("/demographics/<state>")
+def demographics(state):
+    # Create our session (link) from Python to the DB
+    session = Session(engine)
+    
+    query = """
+    Select "State", "Deaths (2010)", "Deaths (2015)", "Births (2010)", "Births (2015)"
+    From aca_table
+    where "State" = ?"""
+
+    data = session.execute(query, [state]).fetchall()
+
+    # aca_list = [] //if more than 1 state
+
+        for state in data:
+            new_dict = {}
+            new_dict["State"] = state[0]
+            new_dict["Deaths (2010)"] = state[0]
+            new_dict["Deaths (2015)"] = state[0]
+            new_dict["Births (2010)"] = state[0]
+            new_dict["Births (2015)"] = state[0]
+            # prcp_date_list.append(new_dict)
+
+    return jsonify (new_dict)
+
+
+@app.route("/deaths")
+def deaths():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
     # Query all stations
-    station_results = session.query(Station.name, Station.id).all()
+    deaths_results = session.query(States.name, States.deaths).all()
     
     session.close()    
 
     # Convert to list of dictionaries to jsonify
-    station_list = []
+    deaths_list = []
 
-    for name, station in station_results:
+    for deaths, states in deaths_results:
         new_dict = {}
-        new_dict[name] = station
-        station_list.append(new_dict)
+        new_dict[deaths] = states
+        death_list.append(new_dict)
 
-    return jsonify (station_list)
+    return jsonify (death_list)
 
-@app.route("/Uninsured")
-def uninsured():
+@app.route("/states")
+def states():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
-    #Query the dates and temperature observations of the most active station "USC00519281" for the last year of data
+    #Query the dates and uninsured in each state by year 2010 and 2015
     #Last year data
-    last_date = session.query(Measurement.date).order_by(Measurement.date.desc()).first()
-    date_yearago = (dt.datetime.strptime(last_date[0],'%Y-%m-%d') - dt.timedelta(days=365)).strftime('%Y-%m-%d')
-
-    #Data
-    tobs_results = session.query(Measurement.date,
-       Measurement.tobs).\
-        filter(Measurement.date >= date_yearago).\
-        filter(Measurement.station == 'USC00519281').\
-        group_by(Measurement.date).\
-        order_by(Measurement.date.asc()).all()
-    
+    states = session.query(States).order_by(States.uninsured).all()
+    uninsured_results = session.query(States.uninsured).\
+    group_by(States.name).\
+    order_by(States.date).all()
     session.close()
    
     # Convert to list of dictionaries to jsonify
-    tobs_list = []
+    uninsured_results_list = []
     
-    for date, tobs in tobs_results:
-        tobs_dict = {}
-        tobs_dict["Date"] = date
-        tobs_dict["Tobs"] = tobs
-        tobs_list.append(tobs_dict)
+    for date, uninsured in uninsured_results:
+        uninsured_dict["States"] = uninsured
+        uninsured_list.append(uninsured_dict)
 
-    return jsonify(tobs_list)
+    return jsonify(uninsured_results_list)
 
-@app.route("/api/v1.0/<start_date>/<end_date>")
-def enddate(start_date, end_date):
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-    
-    #query
-  
-    tobs_end_results = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), 
-        func.max(Measurement.tobs)).\
-       filter(Measurement.date >= start_date).\
-           filter(Measurement.date <= end_date).all()    
-    session.close()
 
-    # Convert to list of dictionaries to jsonify
-    tobs_e_list = []
-    
-    #for min,avg,max in tobs_end_results:
-    for date,min,avg,max in tobs_end_results:    
-        tobs_dict = {}
-        tobs_dict["Date"] = date
-        tobs_dict["Min"] = min
-        tobs_dict["Average"] = avg
-        tobs_dict["Max"] = max
-        tobs_e_list.append(tobs_dict)
-    
-    return jsonify(tobs_e_list)
+    # Return to home page
+    return redirect("/", code=302)
 
 if __name__ == "__main__":
     app.run(debug=True)    
