@@ -1,137 +1,129 @@
-var input = "Alabama"  //need to change if more than one state
+// var input = "Alabama"  //need to change if more than one state
 
-d3.json(`/demographics/${input}`).then(function(data) {
-  var xValues = data[0].State 
-  var yValues = data[0]["Deaths (2010)"] 
+// d3.json(`/demographics/${input}`).then(function(data) {
+//   var xValues = data[0].State 
+//   var yValues = data[0].Deaths_Per_1000_2010
+// //   var yValues1 = data[0].Deaths_2015 
+// //   var yValues2 = data[0].births_2010 
+// //   var yValues2 = data[0].births_2010 
+// });
+
+//==========================================
+
+
+var acaData = "../../Data/acadata.json"
+
+d3.json(acaData).then(function (data) {
+  console.log(data)
+  var newacaData = Object.entries(data);
+  console.log(newacaData)
+
+
+  var filteredData = newacaData.filter(dataUnit => dataUnit[0] == "State")[0];
+  console.log(filteredData)
+
+  var xValues = filteredData["State"];
+  console.log(xValues);
+
+  var yValues = filteredData["Death_Per_1000_2010"];
+  console.log(yValues);
+
+
 });
 
+
+
+
+// function builddata(sample) {
 
 // var acaData = "../../Data/acadata.json"
 
 // d3.json(acaData).then(function (data) {
+  
+//   Object.keys(data).forEach(key => console.log(key));
 //   // console.log(data);
 
-//   var xValues = Object.entries(data["State"]).map(
-//     test => test[1]
-//   );
+//   // var filteredData = acaData.filter(dataUnit => acaDataUnit.State == State)[0];
+//   //   console.log(filteredData);
 
-//   var yValues = Object.entries(data["Deaths (2010)"]).map(
-//     test => test[1]
-//   );
+//   // //     Clear existing metadata
+//   // d3.select("#sample-metadata").html("");
+
+//   // // Add a line for each metadata pair
+//   // Object.entries(filteredData).forEach(([key, value]) => {
+//   //   d3.select("#sample-metadata")
+//   //     //append a paragraph tag
+//   //     .append("p").text(`${key}: ${value}`);
+
+//     // });
+//   })
+// }
 
 
-  //
-    // var setPlots = data["Births (2010)"];
-    // console.log(setPlots);
+// //=============convert to array===========
+// //   var xValues = Object.entries(data.State).map(
+// //     test => test[1]
+// //   );
+  
+// //   var yValues = Object.entries(data.Death_Per_1000_2010).map(
+// //     test => test[1]
+// //   );
 
-  //Create Chart
-  // var xValues = data["State"];
-  // console.log(xValues);
+// // var yValues2 = Object.entries(data.Death_Per_1000_2015).map(
+// //     test => test[1]
+// //   );
 
-  // var yValues = data["Deaths (2010)"];
-  // // var yValues2 = data["Deaths (2015)"];
-  console.log(yValues);
-  // console.log(yValues2);
-
-  var trace1 = {
-    x: xValues,
-    y: yValues,
-    textposition: 'auto',
-    type: "bar"
-    //   orientation: "h"
-  };
-
-  // var trace2 = {
-  //   x: xValues,
-  //   y: yValues2,
-  //   textposition: 'auto',
-  //   type: "bar"
-  //   // orientation: "h"
-  // };
-
-  var data = [trace1];
-
-  var layout = {
-    title: "Deaths 2010 vs 2015",
-    // yaxis: [25, 2500],
-    width: 500,
-    height: 400
-  };
-
-  Plotly.newPlot("plot", data, layout);
-
-});
-// Create map
-var myMap = L.map("map").setView([37.09, -95.71], 5);
-
-// Adding a tile layer (the background map image) to our map
-// We use the addTo method to add objects to our map
-var light = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-  attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-  maxZoom: 18,
-  id: "mapbox/light-v10",
-  // tileSize: 512,
-  // zoomOffset: -1,
-  accessToken: API_KEY
-}).addTo(myMap);
-
+// //================================================================================
 // //Grab values from the data json object to build plots
 // function buildPlots(sample) {
+//     var acaData = "../../Data/acadata.json"
+//     d3.json(url).then(function (data) {
+  
+//       //save arrays
+//       var setPlots = data[0];
+//       console.log(setPlots)
+//       var filteredsetPlots = setPlots.filter(plotUnit => plotUnit.State == State)[0];
+//       console.log(filteredsetPlots)
+  
+//       var state = filteredsetPlots.State;
+//       var sample_values = filteredsetPlots.Death_Per_1000_2010;
+//     //   var otu_labels = filteredsetPlots.otu_labels;
+   
+//       //slice for top ten of each
+//       var state_10 = state.slice(0, 10);
+//       var sample_values_10 = sample_values.slice(0, 10);
+//     //   var otu_labels_10 = otu_labels.slice(0, 10);
 
-//   // var url = "../../Data/acadata.json";
+//   var trace1 = {
+//     x: state,
+//     y: sample_values_10,
+//     textposition: 'auto',
+//     type: "bar"
+//     //   orientation: "h"
+//   };
 
-//   d3.json("../../Data/acadata.json").then(function (sampleData) {
+// //   var trace2 = {
+// //     x: xValues,
+// //     y: yValues2,
+// //     textposition: 'auto',
+// //     type: "bar"
+// //     // orientation: "h"
+// //   };
 
-//     console.log(sampleData);
+//   var data = [trace1, trace2];
 
-//     // //save arrays
-//     // var setPlots = sampleData.acadata;
-//     // var filteredsetPlots = setPlots.filter(plotUnit => plotUnit.State == sample)[0];
-//     // console.log(filteredsetPlots)
+//   var layout = {
+//     title: "Deaths_Per_1000 - 2010 vs 2015",
+//     // yaxis: [25, 2500],
+//     width: 1000,
+//     height: 1000
+//   };
 
-// //2010
-//     var birth_values = filteredsetPlots["Births (2010)"];
-//     var state = filteredsetPlots["State"];
- 
-//     //slice for top ten of each
-//     var birth_values_10 = birth_values.slice(0, 10);
-//     var state_10 = state.slice(0, 10);
+//   Plotly.newPlot("bar", data, layout);
 
-// //     //Create the Bar Plot 
-//     var trace = {
-//       type: "bar",
-//       x: birth_values_10.reverse(),
-//       y: state_10,
-// //       text: otu_labels_10.reverse(),
-//       marker: {
-//         color: "rgb(42, 7, 143)",
-//       },
-//       orientation: "h"
-//     };
 
-    // var data = [trace];
-
-    // var layout = {
-    //   title: "Bar Chart: Top 10 OTU_Samples",
-    //   // titlefont: {
-    //   //   size: 18
-    //   //   // color: 'rgb(230, 59, 21)'
-    //   // }
-    //   showlegend: false,
-    //   xaxis: { trickangle: -45 }
-    //   yaxis: {
-    //     zeroline: false,
-    //     gridwidth: 2
-    //   },
-    //   bargap: 2,
-    //   width: 500,
-    //   height: 400
-    // }
-
-    // Plotly.newPlot("plot", data, layout);
-
-// })};
-
+// })
+// }
 
 
 

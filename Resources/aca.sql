@@ -10,6 +10,7 @@ CREATE TABLE aca_table (
 	"Deaths_2015" INT,
 	"Births_2015" INT,
     "Death_Per_1000_2015" INT,
+	"ABB" VARCHAR,
 	"Latitude" INT,
     "Longitude" INT,
     "Uninsured_Rate_2010(%))" INT,
@@ -21,6 +22,5 @@ CREATE TABLE aca_table (
 SELECT * FROM aca_table;
 
 --Querty infor for State
-Select "State", "Deaths_2010", "Deaths_2015", "Births_2010", "Births_2015"
+Select "ABB", "Deaths_2010", "Deaths_2015", "Births_2010", "Births_2015"
 FROM aca_table
-
