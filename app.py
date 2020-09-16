@@ -31,9 +31,9 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def homepage():
+def index():
 
-    # Render an index.html template and pass in the data retrieved from the database
+    # Rturn homepage - index.html template and pass in the data retrieved from the database
     return render_template("index.html")
 
 
@@ -43,32 +43,47 @@ def demographics(state):
     session = Session(engine)
     state = state.capitalize()
     query = f"""
-    Select "State", "Deaths_2010", "Deaths_2015", "Births_2010", "Births_2015"
+    Select "State", "Deaths_2010", "Births_2010", "Deaths_2015", "Births_2015"
     From aca_table
     where "State" = '{state}'"""
 
     data = session.execute(query).fetchall()
     session.close()
     print(data)
-    #  aca_list = []
+    #   aca_list = []
 
     for state in data:
         new_dict = {}
         new_dict["State"] = state[0]
-        new_dict["Deaths (2010)"] = state[1]
-        new_dict["Births (2010)"] = state[2]
-        new_dict["Deaths (2015)"] = state[3]
-        new_dict["Births (2015)"] = state[4]
-            # aca_list.append(new_dict)
+        new_dict["Deaths (2010)"] = state[0]
+        new_dict["Births (2010)"] = state[0]
+        new_dict["Deaths (2015)"] = state[0]
+        new_dict["Births (2015)"] = state[0]
+        # aca_list.append(new_dict)
 
     return jsonify(new_dict)
 
-    
 
+# @app.route("/states")
+# def states():
+
+#      session = Session(engine)
+
+#     """Return the state Data for a given state."""
+#     sel = [
+#         state.births_2010,
+#         state.deaths_2010,
+#         state.births_2015,
+#         state.deaths_2015,
+#     ]
+
+#     results = session.query(*sel).filter(states == states).all()
+
+#     session.close()
 
 # @app.route("/deaths")
 # def deaths():
-#     # Create our session (link) from Python to the DB
+#     # Create our session
 #     session = Session(engine)
 
 #     # Query all stations
