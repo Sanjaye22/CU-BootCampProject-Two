@@ -38,13 +38,38 @@ function buildPlots(sample) {
       console.log(stateData)
       
       //Bar Chart
-      var trace1 = {
+        // var setPlots = stateData;
+        // var filteredsetPlots = setPlots.filter(plotUnit => plotUnit.ABB == sample)[0];
+        // console.log(filteredsetPlots)
+
+      //   var ABB2 = stateData.ABB;
+      //   var valBirth = stateData.Births_2010;
+      //   console.log(valBirth);
+     
+      // //slice for top ten of each
+      //   var ABB2_10 = ABB2.slice(0, 10);
+      //   console.log(ABB2_10);
+      //   var valBirth_10 = valBirth.slice(0, 10);
+      //   console.log(valBirth_10);
+      
+      //  var trace = {
+      //   type: "bar",
+      //   y: valBirth_10.reverse(),
+      //   x: ABB2_10.map(ABB2_10 => `OTU ${ABB2_10}`).reverse(),
+      //   // text: otu_labels_10.reverse(),
+      //   marker: {
+      //     color: "rgb(42, 7, 143)",
+      //   },
+      //   orientation: "h"
+      // };
+
+      var trace = {
         x: [stateData.ABB],
         y: [stateData.Births_2010, stateData.Births_2015],
         type: "bar"
       };
       
-      var data = [trace1];
+      var data = [trace];
       
       var layout = {
         title: "'Bar' Chart"
