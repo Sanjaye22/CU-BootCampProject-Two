@@ -1,0 +1,868 @@
+[{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae4"
+  },
+  "State": "Alabama",
+  "Deaths_2010": "524",
+  "Births_2010": "60050",
+  "Death_Per_1000_2010": "8",
+  "Deaths_2015": "496",
+  "Births_2015": "59657",
+  "Death_Per_1000_2015": "8",
+  "ABB": "AL",
+  "Latitude": "32",
+  "Longitude": "-86",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae5"
+  },
+  "State": "Alaska",
+  "Deaths_2010": "41",
+  "Births_2010": "11471",
+  "Death_Per_1000_2010": "3",
+  "Deaths_2015": "78",
+  "Births_2015": "11282",
+  "Death_Per_1000_2015": "6",
+  "ABB": "AK",
+  "Latitude": "63",
+  "Longitude": "-154",
+  "Uninsured_Rate_2010": "19",
+  "Uninsured_Rate_2015": "14",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae6"
+  },
+  "State": "Arizona",
+  "Deaths_2010": "520",
+  "Births_2010": "87477",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "467",
+  "Births_2015": "85351",
+  "Death_Per_1000_2015": "5",
+  "ABB": "AZ",
+  "Latitude": "34",
+  "Longitude": "-111",
+  "Uninsured_Rate_2010": "16",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae7"
+  },
+  "State": "Arkansas",
+  "Deaths_2010": "279",
+  "Births_2010": "38540",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "293",
+  "Births_2015": "38886",
+  "Death_Per_1000_2015": "7",
+  "ABB": "AR",
+  "Latitude": "35",
+  "Longitude": "-91",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "9",
+  "Uninsured_Rate_Change_2010-2015": "-8"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae8"
+  },
+  "State": "California",
+  "Deaths_2010": "2417",
+  "Births_2010": "510198",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "2178",
+  "Births_2015": "491748",
+  "Death_Per_1000_2015": "4",
+  "ABB": "CA",
+  "Latitude": "36",
+  "Longitude": "-119",
+  "Uninsured_Rate_2010": "18",
+  "Uninsured_Rate_2015": "8",
+  "Uninsured_Rate_Change_2010-2015": "-9"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339ae9"
+  },
+  "State": "Colorado",
+  "Deaths_2010": "392",
+  "Births_2010": "66355",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "310",
+  "Births_2015": "66581",
+  "Death_Per_1000_2015": "4",
+  "ABB": "CO",
+  "Latitude": "39",
+  "Longitude": "-105",
+  "Uninsured_Rate_2010": "15",
+  "Uninsured_Rate_2015": "8",
+  "Uninsured_Rate_Change_2010-2015": "-7"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aea"
+  },
+  "State": "Connecticut",
+  "Deaths_2010": "200",
+  "Births_2010": "37708",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "202",
+  "Births_2015": "35746",
+  "Death_Per_1000_2015": "5",
+  "ABB": "CT",
+  "Latitude": "41",
+  "Longitude": "-73",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aeb"
+  },
+  "State": "Delaware",
+  "Deaths_2010": "85",
+  "Births_2010": "11364",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "102",
+  "Births_2015": "11166",
+  "Death_Per_1000_2015": "9",
+  "ABB": "DE",
+  "Latitude": "38",
+  "Longitude": "-75",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "5",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aec"
+  },
+  "State": "District of Columbia",
+  "Deaths_2010": "70",
+  "Births_2010": "9165",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "84",
+  "Births_2015": "9578",
+  "Death_Per_1000_2015": "8",
+  "ABB": "DC",
+  "Latitude": "38",
+  "Longitude": "-77",
+  "Uninsured_Rate_2010": "7",
+  "Uninsured_Rate_2015": "3",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aed"
+  },
+  "State": "Florida",
+  "Deaths_2010": "1397",
+  "Births_2010": "214590",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "1399",
+  "Births_2015": "224269",
+  "Death_Per_1000_2015": "6",
+  "ABB": "FL",
+  "Latitude": "27",
+  "Longitude": "-81",
+  "Uninsured_Rate_2010": "21",
+  "Uninsured_Rate_2015": "13",
+  "Uninsured_Rate_Change_2010-2015": "-8"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aee"
+  },
+  "State": "Georgia",
+  "Deaths_2010": "849",
+  "Births_2010": "133947",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "1024",
+  "Births_2015": "131404",
+  "Death_Per_1000_2015": "7",
+  "ABB": "GA",
+  "Latitude": "32",
+  "Longitude": "-82",
+  "Uninsured_Rate_2010": "19",
+  "Uninsured_Rate_2015": "13",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aef"
+  },
+  "State": "Hawaii",
+  "Deaths_2010": "118",
+  "Births_2010": "18988",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "104",
+  "Births_2015": "18420",
+  "Death_Per_1000_2015": "5",
+  "ABB": "HI",
+  "Latitude": "19",
+  "Longitude": "-155",
+  "Uninsured_Rate_2010": "7",
+  "Uninsured_Rate_2015": "4",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af0"
+  },
+  "State": "Idaho",
+  "Deaths_2010": "111",
+  "Births_2010": "23198",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "107",
+  "Births_2015": "22827",
+  "Death_Per_1000_2015": "4",
+  "ABB": "ID",
+  "Latitude": "44",
+  "Longitude": "-114",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "11",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af1"
+  },
+  "State": "Illinois",
+  "Deaths_2010": "1130",
+  "Births_2010": "165200",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "948",
+  "Births_2015": "158116",
+  "Death_Per_1000_2015": "6",
+  "ABB": "IL",
+  "Latitude": "40",
+  "Longitude": "-89",
+  "Uninsured_Rate_2010": "13",
+  "Uninsured_Rate_2015": "7",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af2"
+  },
+  "State": "Indiana",
+  "Deaths_2010": "640",
+  "Births_2010": "83940",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "614",
+  "Births_2015": "84040",
+  "Death_Per_1000_2015": "7",
+  "ABB": "IN",
+  "Latitude": "40",
+  "Longitude": "-85",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "9",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af3"
+  },
+  "State": "Iowa",
+  "Deaths_2010": "188",
+  "Births_2010": "38719",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "167",
+  "Births_2015": "39482",
+  "Death_Per_1000_2015": "4",
+  "ABB": "IA",
+  "Latitude": "41",
+  "Longitude": "-93",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "5",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af4"
+  },
+  "State": "Kansas",
+  "Deaths_2010": "252",
+  "Births_2010": "40649",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "233",
+  "Births_2015": "39154",
+  "Death_Per_1000_2015": "5",
+  "ABB": "KS",
+  "Latitude": "39",
+  "Longitude": "-98",
+  "Uninsured_Rate_2010": "13",
+  "Uninsured_Rate_2015": "9",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af5"
+  },
+  "State": "Kentucky",
+  "Deaths_2010": "380",
+  "Births_2010": "55784",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "375",
+  "Births_2015": "55971",
+  "Death_Per_1000_2015": "6",
+  "ABB": "KY",
+  "Latitude": "37",
+  "Longitude": "-84",
+  "Uninsured_Rate_2010": "15",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-9"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af6"
+  },
+  "State": "Louisiana",
+  "Deaths_2010": "471",
+  "Births_2010": "62379",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "489",
+  "Births_2015": "64692",
+  "Death_Per_1000_2015": "7",
+  "ABB": "LA",
+  "Latitude": "31",
+  "Longitude": "-92",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "11",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af7"
+  },
+  "State": "Maine",
+  "Deaths_2010": "70",
+  "Births_2010": "12970",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "83",
+  "Births_2015": "12607",
+  "Death_Per_1000_2015": "6",
+  "ABB": "ME",
+  "Latitude": "45",
+  "Longitude": "-69",
+  "Uninsured_Rate_2010": "10",
+  "Uninsured_Rate_2015": "8",
+  "Uninsured_Rate_Change_2010-2015": "-1"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af8"
+  },
+  "State": "Maryland",
+  "Deaths_2010": "504",
+  "Births_2010": "73801",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "485",
+  "Births_2015": "73616",
+  "Death_Per_1000_2015": "6",
+  "ABB": "MD",
+  "Latitude": "39",
+  "Longitude": "-76",
+  "Uninsured_Rate_2010": "11",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339af9"
+  },
+  "State": "Massachusetts",
+  "Deaths_2010": "320",
+  "Births_2010": "72865",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "309",
+  "Births_2015": "71492",
+  "Death_Per_1000_2015": "4",
+  "ABB": "MA",
+  "Latitude": "42",
+  "Longitude": "-71",
+  "Uninsured_Rate_2010": "4",
+  "Uninsured_Rate_2015": "2",
+  "Uninsured_Rate_Change_2010-2015": "-1"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339afa"
+  },
+  "State": "Michigan",
+  "Deaths_2010": "816",
+  "Births_2010": "114531",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "739",
+  "Births_2015": "113312",
+  "Death_Per_1000_2015": "6",
+  "ABB": "MI",
+  "Latitude": "44",
+  "Longitude": "-85",
+  "Uninsured_Rate_2010": "12",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339afb"
+  },
+  "State": "Minnesota",
+  "Deaths_2010": "312",
+  "Births_2010": "68610",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "361",
+  "Births_2015": "69834",
+  "Death_Per_1000_2015": "5",
+  "ABB": "MN",
+  "Latitude": "46",
+  "Longitude": "-94",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "4",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339afc"
+  },
+  "State": "Mississippi",
+  "Deaths_2010": "385",
+  "Births_2010": "40036",
+  "Death_Per_1000_2010": "9",
+  "Deaths_2015": "363",
+  "Births_2015": "38394",
+  "Death_Per_1000_2015": "9",
+  "ABB": "MS",
+  "Latitude": "32",
+  "Longitude": "-89",
+  "Uninsured_Rate_2010": "18",
+  "Uninsured_Rate_2015": "12",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339afd"
+  },
+  "State": "Missouri",
+  "Deaths_2010": "505",
+  "Births_2010": "76759",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "487",
+  "Births_2015": "75061",
+  "Death_Per_1000_2015": "6",
+  "ABB": "MO",
+  "Latitude": "37",
+  "Longitude": "-91",
+  "Uninsured_Rate_2010": "13",
+  "Uninsured_Rate_2015": "9",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339afe"
+  },
+  "State": "Montana",
+  "Deaths_2010": "72",
+  "Births_2010": "12060",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "73",
+  "Births_2015": "12583",
+  "Death_Per_1000_2015": "5",
+  "ABB": "MT",
+  "Latitude": "46",
+  "Longitude": "-110",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "11",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339aff"
+  },
+  "State": "Nebraska",
+  "Deaths_2010": "136",
+  "Births_2010": "25918",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "152",
+  "Births_2015": "26679",
+  "Death_Per_1000_2015": "5",
+  "ABB": "NE",
+  "Latitude": "41",
+  "Longitude": "-99",
+  "Uninsured_Rate_2010": "11",
+  "Uninsured_Rate_2015": "8",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b00"
+  },
+  "State": "Nevada",
+  "Deaths_2010": "198",
+  "Births_2010": "35934",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "188",
+  "Births_2015": "36298",
+  "Death_Per_1000_2015": "5",
+  "ABB": "NV",
+  "Latitude": "38",
+  "Longitude": "-116",
+  "Uninsured_Rate_2010": "22",
+  "Uninsured_Rate_2015": "12",
+  "Uninsured_Rate_Change_2010-2015": "-10"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b01"
+  },
+  "State": "New Hampshire",
+  "Deaths_2010": "50",
+  "Births_2010": "12874",
+  "Death_Per_1000_2010": "3",
+  "Deaths_2015": "51",
+  "Births_2015": "12433",
+  "Death_Per_1000_2015": "4",
+  "ABB": "NH",
+  "Latitude": "43",
+  "Longitude": "-71",
+  "Uninsured_Rate_2010": "11",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b02"
+  },
+  "State": "New Jersey",
+  "Deaths_2010": "513",
+  "Births_2010": "106922",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "483",
+  "Births_2015": "103127",
+  "Death_Per_1000_2015": "4",
+  "ABB": "NJ",
+  "Latitude": "40",
+  "Longitude": "-74",
+  "Uninsured_Rate_2010": "13",
+  "Uninsured_Rate_2015": "8",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b03"
+  },
+  "State": "New Mexico",
+  "Deaths_2010": "156",
+  "Births_2010": "27850",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "131",
+  "Births_2015": "25816",
+  "Death_Per_1000_2015": "5",
+  "ABB": "NM",
+  "Latitude": "34",
+  "Longitude": "-105",
+  "Uninsured_Rate_2010": "19",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-8"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b04"
+  },
+  "State": "New York",
+  "Deaths_2010": "1242",
+  "Births_2010": "244375",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "1098",
+  "Births_2015": "237274",
+  "Death_Per_1000_2015": "4",
+  "ABB": "NY",
+  "Latitude": "43",
+  "Longitude": "-74",
+  "Uninsured_Rate_2010": "11",
+  "Uninsured_Rate_2015": "7",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b05"
+  },
+  "State": "North Carolina",
+  "Deaths_2010": "867",
+  "Births_2010": "122350",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "888",
+  "Births_2015": "120843",
+  "Death_Per_1000_2015": "7",
+  "ABB": "NC",
+  "Latitude": "35",
+  "Longitude": "-79",
+  "Uninsured_Rate_2010": "16",
+  "Uninsured_Rate_2015": "11",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b06"
+  },
+  "State": "North Dakota",
+  "Deaths_2010": "62",
+  "Births_2010": "9104",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "81",
+  "Births_2015": "11314",
+  "Death_Per_1000_2015": "7",
+  "ABB": "ND",
+  "Latitude": "47",
+  "Longitude": "-101",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "7",
+  "Uninsured_Rate_Change_2010-2015": "-2"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b07"
+  },
+  "State": "Ohio",
+  "Deaths_2010": "1074",
+  "Births_2010": "139128",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "1000",
+  "Births_2015": "139264",
+  "Death_Per_1000_2015": "7",
+  "ABB": "OH",
+  "Latitude": "40",
+  "Longitude": "-82",
+  "Uninsured_Rate_2010": "12",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b08"
+  },
+  "State": "Oklahoma",
+  "Deaths_2010": "399",
+  "Births_2010": "53238",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "389",
+  "Births_2015": "53122",
+  "Death_Per_1000_2015": "7",
+  "ABB": "OK",
+  "Latitude": "35",
+  "Longitude": "-97",
+  "Uninsured_Rate_2010": "18",
+  "Uninsured_Rate_2015": "13",
+  "Uninsured_Rate_Change_2010-2015": "-5"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b09"
+  },
+  "State": "Oregon",
+  "Deaths_2010": "226",
+  "Births_2010": "45540",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "235",
+  "Births_2015": "45655",
+  "Death_Per_1000_2015": "5",
+  "ABB": "OR",
+  "Latitude": "43",
+  "Longitude": "-120",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "7",
+  "Uninsured_Rate_Change_2010-2015": "-10"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0a"
+  },
+  "State": "Pennsylvania",
+  "Deaths_2010": "1036",
+  "Births_2010": "143321",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "867",
+  "Births_2015": "141047",
+  "Death_Per_1000_2015": "6",
+  "ABB": "PA",
+  "Latitude": "41",
+  "Longitude": "-77",
+  "Uninsured_Rate_2010": "10",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0b"
+  },
+  "State": "Rhode Island",
+  "Deaths_2010": "80",
+  "Births_2010": "11177",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "65",
+  "Births_2015": "10993",
+  "Death_Per_1000_2015": "5",
+  "ABB": "RI",
+  "Latitude": "41",
+  "Longitude": "-71",
+  "Uninsured_Rate_2010": "12",
+  "Uninsured_Rate_2015": "5",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0c"
+  },
+  "State": "South Carolina",
+  "Deaths_2010": "428",
+  "Births_2010": "58342",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "402",
+  "Births_2015": "58139",
+  "Death_Per_1000_2015": "6",
+  "ABB": "SC",
+  "Latitude": "33",
+  "Longitude": "-81",
+  "Uninsured_Rate_2010": "17",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0d"
+  },
+  "State": "South Dakota",
+  "Deaths_2010": "84",
+  "Births_2010": "11811",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "90",
+  "Births_2015": "12336",
+  "Death_Per_1000_2015": "7",
+  "ABB": "SD",
+  "Latitude": "43",
+  "Longitude": "-99",
+  "Uninsured_Rate_2010": "12",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-2"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0e"
+  },
+  "State": "Tennessee",
+  "Deaths_2010": "626",
+  "Births_2010": "79495",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "568",
+  "Births_2015": "81685",
+  "Death_Per_1000_2015": "6",
+  "ABB": "TN",
+  "Latitude": "35",
+  "Longitude": "-86",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b0f"
+  },
+  "State": "Texas",
+  "Deaths_2010": "2373",
+  "Births_2010": "386118",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "2305",
+  "Births_2015": "403618",
+  "Death_Per_1000_2015": "5",
+  "ABB": "TX",
+  "Latitude": "31",
+  "Longitude": "-99",
+  "Uninsured_Rate_2010": "23",
+  "Uninsured_Rate_2015": "17",
+  "Uninsured_Rate_Change_2010-2015": "-6"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b10"
+  },
+  "State": "Utah",
+  "Deaths_2010": "254",
+  "Births_2010": "52258",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "255",
+  "Births_2015": "50778",
+  "Death_Per_1000_2015": "5",
+  "ABB": "UT",
+  "Latitude": "39",
+  "Longitude": "-111",
+  "Uninsured_Rate_2010": "15",
+  "Uninsured_Rate_2015": "10",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b11"
+  },
+  "State": "Vermont",
+  "Deaths_2010": "26",
+  "Births_2010": "6223",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "27",
+  "Births_2015": "5903",
+  "Death_Per_1000_2015": "4",
+  "ABB": "VT",
+  "Latitude": "44",
+  "Longitude": "-72",
+  "Uninsured_Rate_2010": "8",
+  "Uninsured_Rate_2015": "3",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b12"
+  },
+  "State": "Virginia",
+  "Deaths_2010": "703",
+  "Births_2010": "103002",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "610",
+  "Births_2015": "103303",
+  "Death_Per_1000_2015": "5",
+  "ABB": "VA",
+  "Latitude": "37",
+  "Longitude": "-78",
+  "Uninsured_Rate_2010": "13",
+  "Uninsured_Rate_2015": "9",
+  "Uninsured_Rate_Change_2010-2015": "-4"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b13"
+  },
+  "State": "Washington",
+  "Deaths_2010": "388",
+  "Births_2010": "86539",
+  "Death_Per_1000_2010": "4",
+  "Deaths_2015": "434",
+  "Births_2015": "88990",
+  "Death_Per_1000_2015": "4",
+  "ABB": "WA",
+  "Latitude": "47",
+  "Longitude": "-120",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-7"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b14"
+  },
+  "State": "West Virginia",
+  "Deaths_2010": "150",
+  "Births_2010": "20470",
+  "Death_Per_1000_2010": "7",
+  "Deaths_2015": "141",
+  "Births_2015": "19805",
+  "Death_Per_1000_2015": "7",
+  "ABB": "WV",
+  "Latitude": "38",
+  "Longitude": "-80",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "6",
+  "Uninsured_Rate_Change_2010-2015": "-8"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b15"
+  },
+  "State": "Wisconsin",
+  "Deaths_2010": "400",
+  "Births_2010": "68487",
+  "Death_Per_1000_2010": "5",
+  "Deaths_2015": "389",
+  "Births_2015": "67041",
+  "Death_Per_1000_2015": "5",
+  "ABB": "WI",
+  "Latitude": "43",
+  "Longitude": "-88",
+  "Uninsured_Rate_2010": "9",
+  "Uninsured_Rate_2015": "5",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+},{
+  "_id": {
+    "$oid": "5f635250c285eb3438339b16"
+  },
+  "State": "Wyoming",
+  "Deaths_2010": "52",
+  "Births_2010": "7556",
+  "Death_Per_1000_2010": "6",
+  "Deaths_2015": "38",
+  "Births_2015": "7765",
+  "Death_Per_1000_2015": "4",
+  "ABB": "WY",
+  "Latitude": "43",
+  "Longitude": "-107",
+  "Uninsured_Rate_2010": "14",
+  "Uninsured_Rate_2015": "11",
+  "Uninsured_Rate_Change_2010-2015": "-3"
+}]

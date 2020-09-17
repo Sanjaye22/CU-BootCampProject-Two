@@ -1,4 +1,4 @@
-/* .info {
+.info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: white;
@@ -21,9 +21,8 @@
     float: left;
     margin-right: 8px;
     opacity: 0.7;
-  } */
+  }
 
-  
 /* set map, body, and html to 100% of the screen size */
 #map {
   height: 800px;
