@@ -23,7 +23,8 @@ d3.json("../Data/acadata2.json").then(function(acadata) {
 		var newMarker = L.marker([combine_data.Latitude, combine_data.Longitude]).addTo(map);
 
 		// Bind a popup to the marker that will  display on click. This will be rendered as HTML
-		newMarker.bindPopup(combine_data.State);
+		newMarker.bindPopup("<h1>State Stats</h1> <hr>" + "<h3>2010 Uninsured Rate %: " + combine_data.Uninsured_Rate_2010 + "</h3> <hr> <h3>2015 Uninsured Rate %: " + combine_data.Uninsured_Rate_2015 + "</h3>" + "</h3> <hr> <h3>2010 Death per 1000: " + combine_data.Death_Per_1000_2010 + "</h3>" +
+		"</h3> <hr> <h3>2015 Death per 1000: " + combine_data.Death_Per_1000_2015 + "</h3>");
     }
   });
 });
@@ -33,12 +34,12 @@ var info = L.control();
 
 info.onAdd = function (map) {
 	this._div = L.DomUtil.create('div', 'info');
-	this.update();
+	this.update(); 
 	return this._div;
 };
 
 info.update = function (props) {
-	this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+	this._div.innerHTML = '<h4>ACA Stats</h4>' +  (props ?
 		'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
 		: 'Hover over a state');
 };

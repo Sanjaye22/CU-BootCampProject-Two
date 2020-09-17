@@ -28,7 +28,7 @@ function buildBar(sample) {
     var data = [trace];
 
     var layout = {
-      // title: "Uninsured Rate (%): 2010 vs 2015",
+      title: "Uninsured Rate (%): 2010 vs 2015",
       yaxis: {
         zeroline: true,
         gridwidth: 2,
@@ -83,7 +83,7 @@ function buildBar1(sample) {
     var data = [trace];
 
     var layout = {
-      // title: "Deaths: 2010 vs 2015",
+      title: "Deaths: 2010 vs 2015",
       yaxis: {
         zeroline: true,
         gridwidth: 2,
