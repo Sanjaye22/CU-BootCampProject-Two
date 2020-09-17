@@ -8,7 +8,7 @@ function buildBar (sample) {
           stateData[key] = value[sample]
           }
       }
-     //Bar Chart
+     //Bar Chart - Uninsured rate
       var trace = {
         x: ["Year 2010", "Year 2015"],
         y: [stateData.Uninsured_Rate_2010, stateData.Uninsured_Rate_2015],
@@ -16,11 +16,11 @@ function buildBar (sample) {
         textposition: 'auto',
         width: [0.3, 0.3],
         marker: {
-          color: 'rgb(158,202,225)',
+          color: ['rgb(142,124,195)', 'rgb(26, 118, 255)'],
           opacity: 0.6,
           line: {
             color: 'rgb(8,48,107)',
-            width: 1.5
+            width: 2
           }
         }
       };
@@ -28,11 +28,22 @@ function buildBar (sample) {
       var data = [trace];
       
       var layout = {
-        title: "Uninsured Rate (%): 2010 vs 2015",
-        yaxis: {type:"log"},
+        // title: "Uninsured Rate (%): 2010 vs 2015",
+        yaxis: {
+          zeroline: true,
+          gridwidth: 2,
+          title: "Uninsured Rate %",
+          titlefront: {
+            size: 16,
+            color: 'rgb(107, 107, 107)'
+          }
+        },
+        bargap :2,
         font: {
           family: "Releway, sans-serif"
-        }
+        },
+        width: 1000,
+        height: 400
       };
       
       Plotly.newPlot("bar", data, layout);
@@ -56,14 +67,38 @@ function buildBar1(sample) {
       var trace = {
         x: ["Year 2010", "Year 2015"],
         y: [stateData.Deaths_2010, stateData.Deaths_2015],
-        type: "bar"
+        type: "bar",
+        textposition: 'auto',
+        width: [0.3, 0.3],
+        marker: {
+          color: ['rgb(49,130,189)', 'rgb(204,204,204)'],
+          opacity: 0.6,
+          line: {
+            color: 'rgb(8,48,107)',
+            width: 2
+          }
+        }
       };
       
       var data = [trace];
       
       var layout = {
-        title: "Deaths: 2010 vs 2015",
-        yaxis: {type:"log"}
+        // title: "Deaths: 2010 vs 2015",
+        yaxis: {
+          zeroline: true,
+          gridwidth: 2,
+          title: "Deaths",
+          titlefront: {
+            size: 16,
+            color: 'rgba(245,246,249,1)'
+          }
+        },
+        bargap :2,
+        font: {
+          family: "Releway, sans-serif"
+        },
+        width: 1000,
+        height: 400
       };
       
       Plotly.newPlot("bar1", data, layout);
