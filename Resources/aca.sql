@@ -11,16 +11,13 @@ CREATE TABLE aca_table (
 	"Births_2015" INT,
     "Death_Per_1000_2015" INT,
 	"ABB" VARCHAR,
-	"Latitude" INT,
-    "Longitude" INT,
-    "Uninsured_Rate_2010(%))" INT,
-	"Uninsured_Rate_2015(%))" INT,
-    "Uninsured_Rate_Change_2010-2015(%)" INT
+	"Latitude" VARCHAR,
+    "Longitude" VARCHAR,
+    "Uninsured_Rate_2010" VARCHAR,
+	"Uninsured_Rate_2015" VARCHAR,
+    "Uninsured_Rate_Change_2010-2015" VARCHAR
 );
 
 -- View table
 SELECT * FROM aca_table;
 
---Querty infor for State
-Select "ABB", "Deaths_2010", "Deaths_2015", "Births_2010", "Births_2015"
-FROM aca_table
