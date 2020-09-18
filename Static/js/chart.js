@@ -83,7 +83,7 @@ function buildBar1(sample) {
     var data = [trace];
 
     var layout = {
-      title: "Deaths: 2010 vs 2015",
+      title: "<b>Deaths: 2010 vs 2015</b>",
       yaxis: {
         zeroline: true,
         gridwidth: 2,
