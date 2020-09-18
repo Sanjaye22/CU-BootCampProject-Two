@@ -11,10 +11,10 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 // Perform an API call to the Citi Bike Station Information endpoint
-d3.json("../Data/acadata2.json").then(function(acadata) {
+d3.json("http://localhost:5000/api/acadata").then(function(acadata) {
 	// console.log(acadata);
   // When the first API call is complete, perform another call to the Citi Bike Station Status endpoint
-  d3.json("../Data/states.json").then(function(statesloc) {
+  d3.json("http://localhost:5000/api/states").then(function(statesloc) {
     // Loop through the stations (they're the same size and have partially matching data)
     for (var i = 0; i < acadata.length; i++) {
 		var combine_data = Object.assign({}, acadata[i], statesloc[i]);

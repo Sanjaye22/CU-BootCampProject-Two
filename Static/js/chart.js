@@ -1,5 +1,5 @@
 function buildBar(sample) {
-  var acaData = "../../Data/acadata.json"
+  var acaData = "http://localhost:5000/api/acadataCharts"
 
   d3.json(acaData).then(function (data) {
     stateData = {}
@@ -28,15 +28,15 @@ function buildBar(sample) {
     var data = [trace];
 
     var layout = {
-      title: "Uninsured Rate (%): 2010 vs 2015",
+      title: "<b>Uninsured Rate (%): 2010 vs 2015</b>",
       yaxis: {
         zeroline: true,
         gridwidth: 2,
         title: "Uninsured Rate %",
-        titlefront: {
+        titlefont: {
           size: 16,
           color: 'rgb(107, 107, 107)'
-        }
+          }
       },
       bargap: 2,
       font: {
@@ -53,7 +53,7 @@ function buildBar(sample) {
 
 function buildBar1(sample) {
 
-  var acaData = "../../Data/acadata.json"
+  var acaData = "http://localhost:5000/api/acadataCharts"
 
   d3.json(acaData).then(function (data) {
     stateData = {}
@@ -108,7 +108,7 @@ function buildBar1(sample) {
 
 //function to initiate plots
 function init() {
-  var acaData = "../../Data/acadata.json"
+  var acaData = "http://localhost:5000/api/acadataCharts"
 
   d3.json(acaData).then(function (data) {
 
