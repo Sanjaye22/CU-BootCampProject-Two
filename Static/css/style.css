@@ -48,10 +48,6 @@ h1 {
   text-align: center;
 }
 
-/* .container-img {
-  text-align: center;
-  width: 0%;
-  height: 0%;
-  object-fit: contain;
-
-} */
+h5 {
+  font-weight: bold;
+}

@@ -39,7 +39,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-	this._div.innerHTML = '<h4>ACA Stats</h4>' +  (props ?
+	this._div.innerHTML = '<h4>State Population</h4>' +  (props ?
 		'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
 		: 'Hover over a state');
 };
