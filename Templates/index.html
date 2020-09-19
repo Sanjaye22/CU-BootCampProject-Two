@@ -19,7 +19,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 jumbotron text-center"
+                <div class="col-sm-10 text-center"
                     style="background-color: whitesmoke;">
                     <h1 style="color: rgb(10, 133, 152)">U.S. State Infant Mortality
                         Rate Pre(2010) & Post(2015) Affordable
@@ -27,27 +27,31 @@
                     <p class="group-name">Group members: Susan Jessop, Anjelica
                         Ramsey, Sanjaye Thomas</p>
                         <img
-                        src="https://cdn3.vectorstock.com/i/thumb-large/31/57/baby-feet-pink-vector-6023157.jpg"
+                        src="https://img.favpng.com/15/18/2/pacifier-infant-baby-shower-clip-art-png-favpng-DGsSZGEE7y2qSRLTkFJJv9USB_t.jpg"
                         alt="img" />
                 </div>
-
         </div> 
                 <!-- The div that holds our map -->
-            <div class="container tex-center">
-                <div class="row">
-                    <div class="col-sm-10">
-                        <div class="fig">Figure 1. </div>
-                        <p>ADD TEXT HERE</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 ">
+                <br></br>
+                <h3>Click on Markers to review ACA Stats for each State:
+                    <li> Uninusred Rate - 2010 vs 2015</li>
+                    <li> Death per 1000 - 2010 vs 2015</li>
+                </h3>
+                    <div class="fig">Figure 1. </div>
+           
                   <div id="map"></div>
                 </div>
                   </div>
             </div>
-
+            <div class="container">
                 <div class="row">
-                    <p>The below charts show the uninsured rate & deaths
-                        for 2010 and 2015.</p>
-                    <div class="col-md-2">
-                        <div class="dropdown-state">
+                    <div class="col-md-10">
+                    <br></br>
+                    <p>The below charts show the uninsured rate & infant mortality for 2010 and 2015.</p>
+                    <div class="dropdown-state">
                             <h5>Select a State:</h5>
                             <select id="selDataset"
                                 onchange="optionChanged(this.value)"></select>
@@ -69,7 +73,8 @@
             </div>
         </div>
 
-        <div class="source">Sources:
+        <div class="source">Sources
+            <p> ___________________________________</p>
             <p> - Centers for Disease Control and Prevention -
                 https://wonder.cdc.gov/lbd-current.html</p>
             <p> - US Department of Health and Human Services and US
@@ -93,5 +98,13 @@
         <script type="text/javascript" src="../static/js/chart.js"></script>
         <script type="text/javascript" src="../static/js/us-states.js"></script>
         <script type="text/javascript" src="../static/js/choromap.js"></script>
+
+         <!-- Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
