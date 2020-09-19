@@ -10,7 +10,7 @@ function buildBar(sample) {
     }
     //Bar Chart - Uninsured rate
     var trace = {
-      x: ["Year 2010", "Year 2015"],
+      x: ["<b>Year 2010</b>", "<b>Year 2015</b>"],
       y: [stateData.Uninsured_Rate_2010, stateData.Uninsured_Rate_2015],
       type: "bar",
       textposition: 'auto',
@@ -32,7 +32,7 @@ function buildBar(sample) {
       yaxis: {
         zeroline: true,
         gridwidth: 2,
-        title: "Uninsured Rate %",
+        title: "<b>Uninsured Rate %</b>",
         titlefont: {
           size: 16,
           color: 'rgb(107, 107, 107)'
@@ -65,7 +65,7 @@ function buildBar1(sample) {
     // console.log(stateData)
 
     var trace = {
-      x: ["Year 2010", "Year 2015"],
+      x: ["<b>Year 2010</b>", "<b>Year 2015</b>"],
       y: [stateData.Deaths_2010, stateData.Deaths_2015],
       type: "bar",
       textposition: 'auto',
@@ -87,7 +87,7 @@ function buildBar1(sample) {
       yaxis: {
         zeroline: true,
         gridwidth: 2,
-        title: "Deaths",
+        title: "<b>Deaths</b>",
         titlefront: {
           size: 16,
           color: 'rgba(245,246,249,1)'

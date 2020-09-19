@@ -32,6 +32,7 @@
   text-align: left;
   color: black;
   font-weight: bold;
+  font-style: italic;
 }
 
 .source {
@@ -49,5 +50,11 @@ h1 {
 }
 
 h5 {
+  font-weight: bold;
+}
+
+.state-tag {
+  font-style: italic;
+  color: rgb(10, 133, 152);
   font-weight: bold;
 }
