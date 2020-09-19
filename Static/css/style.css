@@ -23,8 +23,35 @@
     opacity: 0.7;
   }
 
-  
 /* set map, body, and html to 100% of the screen size */
 #map {
   height: 800px;
 }
+
+.fig {
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+.source {
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  color: blue;
+}
+
+.group-name {
+  text-align: center;
+}
+
+/* .container-img {
+  text-align: center;
+  width: 0%;
+  height: 0%;
+  object-fit: contain;
+
+} */

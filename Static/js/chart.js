@@ -1,96 +1,122 @@
-function buildPie (sample) {
-  var acaData = "../../Data/acadata.json"
+function buildBar(sample) {
+  var acaData = "http://localhost:5000/api/acadataCharts"
 
   d3.json(acaData).then(function (data) {
-      stateData = {}
-      for (const [key, value] of Object.entries(data)) {
-          if (value[sample]){
-          stateData[key] = value[sample]
-          }
+    stateData = {}
+    for (const [key, value] of Object.entries(data)) {
+      if (value[sample]) {
+        stateData[key] = value[sample]
       }
-      //Pie Chart
-      var data = [{
-        values: [stateData.Death_Per_1000_2010, stateData.Death_Per_1000_2010, stateData.Deaths_2010],
-         // labels: ['Residential', 'Non-Residential', 'Utility'],
-        type: 'pie'
-      }];
-      
-      var layout = {
-        height: 400,
-        width: 500
-      };
-
-      Plotly.newPlot('pie', data, layout);
-  });
-}
-  
-function buildPlots(sample) {
-
-  var acaData = "../../Data/acadata.json"
-
-  d3.json(acaData).then(function (data) {
-      stateData = {}
-      for (const [key, value] of Object.entries(data)) {
-          if (value[sample]){
-          stateData[key] = value[sample]
-          }
+    }
+    //Bar Chart - Uninsured rate
+    var trace = {
+      x: ["Year 2010", "Year 2015"],
+      y: [stateData.Uninsured_Rate_2010, stateData.Uninsured_Rate_2015],
+      type: "bar",
+      textposition: 'auto',
+      width: [0.3, 0.3],
+      marker: {
+        color: ['rgb(142,124,195)', 'rgb(26, 118, 255)'],
+        opacity: 0.6,
+        line: {
+          color: 'rgb(8,48,107)',
+          width: 2
+        }
       }
-      console.log(stateData)
-      
-      //Bar Chart
-        // var setPlots = stateData;
-        // var filteredsetPlots = setPlots.filter(plotUnit => plotUnit.ABB == sample)[0];
-        // console.log(filteredsetPlots)
+    };
 
-      //   var ABB2 = stateData.ABB;
-      //   var valBirth = stateData.Births_2010;
-      //   console.log(valBirth);
-     
-      // //slice for top ten of each
-      //   var ABB2_10 = ABB2.slice(0, 10);
-      //   console.log(ABB2_10);
-      //   var valBirth_10 = valBirth.slice(0, 10);
-      //   console.log(valBirth_10);
-      
-      //  var trace = {
-      //   type: "bar",
-      //   y: valBirth_10.reverse(),
-      //   x: ABB2_10.map(ABB2_10 => `OTU ${ABB2_10}`).reverse(),
-      //   // text: otu_labels_10.reverse(),
-      //   marker: {
-      //     color: "rgb(42, 7, 143)",
-      //   },
-      //   orientation: "h"
-      // };
+    var data = [trace];
 
-      var trace = {
-        x: [stateData.ABB],
-        y: [stateData.Births_2010, stateData.Births_2015],
-        type: "bar"
-      };
-      
-      var data = [trace];
-      
-      var layout = {
-        title: "'Bar' Chart"
-      };
-      
-      Plotly.newPlot("bar", data, layout);
+    var layout = {
+      title: "<b>Uninsured Rate (%): 2010 vs 2015</b>",
+      yaxis: {
+        zeroline: true,
+        gridwidth: 2,
+        title: "Uninsured Rate %",
+        titlefont: {
+          size: 16,
+          color: 'rgb(107, 107, 107)'
+          }
+      },
+      bargap: 2,
+      font: {
+        family: "Releway, sans-serif"
+      },
+      width: 1000,
+      height: 400
+    };
+
+    Plotly.newPlot("bar", data, layout);
 
   });
 }
-  
-  //function to initiate plots
+
+function buildBar1(sample) {
+
+  var acaData = "http://localhost:5000/api/acadataCharts"
+
+  d3.json(acaData).then(function (data) {
+    stateData = {}
+    for (const [key, value] of Object.entries(data)) {
+      if (value[sample]) {
+        stateData[key] = value[sample]
+      }
+    }
+    // console.log(stateData)
+
+    var trace = {
+      x: ["Year 2010", "Year 2015"],
+      y: [stateData.Deaths_2010, stateData.Deaths_2015],
+      type: "bar",
+      textposition: 'auto',
+      width: [0.3, 0.3],
+      marker: {
+        color: ['rgb(49,130,189)', 'rgb(204,204,204)'],
+        opacity: 0.6,
+        line: {
+          color: 'rgb(8,48,107)',
+          width: 2
+        }
+      }
+    };
+
+    var data = [trace];
+
+    var layout = {
+      title: "<b>Deaths: 2010 vs 2015</b>",
+      yaxis: {
+        zeroline: true,
+        gridwidth: 2,
+        title: "Deaths",
+        titlefront: {
+          size: 16,
+          color: 'rgba(245,246,249,1)'
+        }
+      },
+      bargap: 2,
+      font: {
+        family: "Releway, sans-serif"
+      },
+      width: 1000,
+      height: 400
+    };
+
+    Plotly.newPlot("bar1", data, layout);
+
+  });
+}
+
+//function to initiate plots
 function init() {
-  var acaData = "../../Data/acadata.json"
-  
+  var acaData = "http://localhost:5000/api/acadataCharts"
+
   d3.json(acaData).then(function (data) {
-  
+
     var usState = d3.select("#selDataset")
-  
+
     var stateABB = data.ABB
     // console.log(stateABB);
-  
+
     for (const [key, value] of Object.entries(stateABB)) {
       usState.append("option")
         .text(value)
@@ -98,27 +124,16 @@ function init() {
     }
   })
 
-  buildPlots(0);
-  buildPie(0);
+  buildBar(0);
+  buildBar1(0);
 
 }
 
 function optionChanged(newSample) {
   //     // Fetch new data each time a new sample is selected
-  buildPlots(newSample);
-  buildPie(newSample);
+  buildBar(newSample);
+  buildBar1(newSample);
 }
 
 // //   // Initialize the dashboard
 init();
-
-
- 
-  
-
-
-
-
-
-
-

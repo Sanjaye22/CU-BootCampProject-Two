@@ -1,0 +1,409 @@
+[{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b17"
+  },
+  "ABB": "AK",
+  "Latitude": "63.588753",
+  "Longitude": "-154.493062",
+  "State": "Alaska"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b18"
+  },
+  "ABB": "AL",
+  "Latitude": "32.318231",
+  "Longitude": "-86.902298",
+  "State": "Alabama"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b19"
+  },
+  "ABB": "AR",
+  "Latitude": "35.20105",
+  "Longitude": "-91.831833",
+  "State": "Arkansas"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1a"
+  },
+  "ABB": "AZ",
+  "Latitude": "34.048928",
+  "Longitude": "-111.093731",
+  "State": "Arizona"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1b"
+  },
+  "ABB": "CA",
+  "Latitude": "36.778261",
+  "Longitude": "-119.417932",
+  "State": "California"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1c"
+  },
+  "ABB": "CO",
+  "Latitude": "39.550051",
+  "Longitude": "-105.782067",
+  "State": "Colorado"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1d"
+  },
+  "ABB": "CT",
+  "Latitude": "41.603221",
+  "Longitude": "-73.087749",
+  "State": "Connecticut"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1e"
+  },
+  "ABB": "DC",
+  "Latitude": "38.905985",
+  "Longitude": "-77.033418",
+  "State": "District of Columbia"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b1f"
+  },
+  "ABB": "DE",
+  "Latitude": "38.910832",
+  "Longitude": "-75.52767",
+  "State": "Delaware"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b20"
+  },
+  "ABB": "FL",
+  "Latitude": "27.664827",
+  "Longitude": "-81.515754",
+  "State": "Florida"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b21"
+  },
+  "ABB": "GA",
+  "Latitude": "32.157435",
+  "Longitude": "-82.907123",
+  "State": "Georgia"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b22"
+  },
+  "ABB": "HI",
+  "Latitude": "19.898682",
+  "Longitude": "-155.665857",
+  "State": "Hawaii"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b23"
+  },
+  "ABB": "IA",
+  "Latitude": "41.878003",
+  "Longitude": "-93.097702",
+  "State": "Iowa"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b24"
+  },
+  "ABB": "ID",
+  "Latitude": "44.068202",
+  "Longitude": "-114.742041",
+  "State": "Idaho"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b25"
+  },
+  "ABB": "IL",
+  "Latitude": "40.633125",
+  "Longitude": "-89.398528",
+  "State": "Illinois"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b26"
+  },
+  "ABB": "IN",
+  "Latitude": "40.551217",
+  "Longitude": "-85.602364",
+  "State": "Indiana"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b27"
+  },
+  "ABB": "KS",
+  "Latitude": "39.011902",
+  "Longitude": "-98.484246",
+  "State": "Kansas"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b28"
+  },
+  "ABB": "KY",
+  "Latitude": "37.839333",
+  "Longitude": "-84.270018",
+  "State": "Kentucky"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b29"
+  },
+  "ABB": "LA",
+  "Latitude": "31.244823",
+  "Longitude": "-92.145024",
+  "State": "Louisiana"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2a"
+  },
+  "ABB": "MA",
+  "Latitude": "42.407211",
+  "Longitude": "-71.382437",
+  "State": "Massachusetts"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2b"
+  },
+  "ABB": "MD",
+  "Latitude": "39.045755",
+  "Longitude": "-76.641271",
+  "State": "Maryland"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2c"
+  },
+  "ABB": "ME",
+  "Latitude": "45.253783",
+  "Longitude": "-69.445469",
+  "State": "Maine"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2d"
+  },
+  "ABB": "MI",
+  "Latitude": "44.314844",
+  "Longitude": "-85.602364",
+  "State": "Michigan"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2e"
+  },
+  "ABB": "MN",
+  "Latitude": "46.729553",
+  "Longitude": "-94.6859",
+  "State": "Minnesota"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b2f"
+  },
+  "ABB": "MO",
+  "Latitude": "37.964253",
+  "Longitude": "-91.831833",
+  "State": "Missouri"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b30"
+  },
+  "ABB": "MS",
+  "Latitude": "32.354668",
+  "Longitude": "-89.398528",
+  "State": "Mississippi"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b31"
+  },
+  "ABB": "MT",
+  "Latitude": "46.879682",
+  "Longitude": "-110.362566",
+  "State": "Montana"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b32"
+  },
+  "ABB": "NC",
+  "Latitude": "35.759573",
+  "Longitude": "-79.0193",
+  "State": "North Carolina"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b33"
+  },
+  "ABB": "ND",
+  "Latitude": "47.551493",
+  "Longitude": "-101.002012",
+  "State": "North Dakota"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b34"
+  },
+  "ABB": "NE",
+  "Latitude": "41.492537",
+  "Longitude": "-99.901813",
+  "State": "Nebraska"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b35"
+  },
+  "ABB": "NH",
+  "Latitude": "43.193852",
+  "Longitude": "-71.572395",
+  "State": "New Hampshire"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b36"
+  },
+  "ABB": "NJ",
+  "Latitude": "40.058324",
+  "Longitude": "-74.405661",
+  "State": "New Jersey"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b37"
+  },
+  "ABB": "NM",
+  "Latitude": "34.97273",
+  "Longitude": "-105.032363",
+  "State": "New Mexico"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b38"
+  },
+  "ABB": "NV",
+  "Latitude": "38.80261",
+  "Longitude": "-116.419389",
+  "State": "Nevada"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b39"
+  },
+  "ABB": "NY",
+  "Latitude": "43.299428",
+  "Longitude": "-74.217933",
+  "State": "New York"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3a"
+  },
+  "ABB": "OH",
+  "Latitude": "40.417287",
+  "Longitude": "-82.907123",
+  "State": "Ohio"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3b"
+  },
+  "ABB": "OK",
+  "Latitude": "35.007752",
+  "Longitude": "-97.092877",
+  "State": "Oklahoma"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3c"
+  },
+  "ABB": "OR",
+  "Latitude": "43.804133",
+  "Longitude": "-120.554201",
+  "State": "Oregon"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3d"
+  },
+  "ABB": "PA",
+  "Latitude": "41.203322",
+  "Longitude": "-77.194525",
+  "State": "Pennsylvania"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3e"
+  },
+  "ABB": "RI",
+  "Latitude": "41.580095",
+  "Longitude": "-71.477429",
+  "State": "Rhode Island"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b3f"
+  },
+  "ABB": "SC",
+  "Latitude": "33.836081",
+  "Longitude": "-81.163725",
+  "State": "South Carolina"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b40"
+  },
+  "ABB": "SD",
+  "Latitude": "43.969515",
+  "Longitude": "-99.901813",
+  "State": "South Dakota"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b41"
+  },
+  "ABB": "TN",
+  "Latitude": "35.517491",
+  "Longitude": "-86.580447",
+  "State": "Tennessee"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b42"
+  },
+  "ABB": "TX",
+  "Latitude": "31.968599",
+  "Longitude": "-99.901813",
+  "State": "Texas"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b43"
+  },
+  "ABB": "UT",
+  "Latitude": "39.32098",
+  "Longitude": "-111.093731",
+  "State": "Utah"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b44"
+  },
+  "ABB": "VA",
+  "Latitude": "37.431573",
+  "Longitude": "-78.656894",
+  "State": "Virginia"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b45"
+  },
+  "ABB": "VT",
+  "Latitude": "44.558803",
+  "Longitude": "-72.577841",
+  "State": "Vermont"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b46"
+  },
+  "ABB": "WA",
+  "Latitude": "47.751074",
+  "Longitude": "-120.740139",
+  "State": "Washington"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b47"
+  },
+  "ABB": "WI",
+  "Latitude": "43.78444",
+  "Longitude": "-88.787868",
+  "State": "Wisconsin"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b48"
+  },
+  "ABB": "WV",
+  "Latitude": "38.597626",
+  "Longitude": "-80.454903",
+  "State": "West Virginia"
+},{
+  "_id": {
+    "$oid": "5f6352bac285eb3438339b49"
+  },
+  "ABB": "WY",
+  "Latitude": "43.075968",
+  "Longitude": "-107.290284",
+  "State": "Wyoming"
+}]

@@ -12,49 +12,86 @@
 
         <!-- Our CSS -->
         <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="header">
-            <h1>State Infant Mortality Rate Pre(2010) & Post(2015) Affordable
-                Care Act </h1>
-            <p>Group members: Susan Jessop, Anjelica Ramsey, Sanjaye Thomas</p>
-        </div>
-
-        <!-- The div that holds our map -->
-        <div id="map"></div>
-
-        <div class="row">
-            <div class="col-md-2">
-                <div class="well">
-                    <h5>State Demographics:</h5>
-                    <select id="selDataset"
-                        onchange="optionChanged(this.value)"></select>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 jumbotron text-center"
+                    style="background-color: whitesmoke;">
+                    <h1 style="color: rgb(10, 133, 152)">U.S. State Infant Mortality
+                        Rate Pre(2010) & Post(2015) Affordable
+                        Care Act</h1>
+                    <p class="group-name">Group members: Susan Jessop, Anjelica
+                        Ramsey, Sanjaye Thomas</p>
+                        <img
+                        src="https://cdn3.vectorstock.com/i/thumb-large/31/57/baby-feet-pink-vector-6023157.jpg"
+                        alt="img" />
                 </div>
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Death_Per_1000 - 2010 vs 2015</h3>
-                    </div>
-                    <div id="sample-aca" class="panel-body"></div>
 
-                    <div id="pie"></div>
+        </div> 
+                <!-- The div that holds our map -->
+            <div class="container tex-center">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="fig">Figure 1. </div>
+                        <p>ADD TEXT HERE</p>
+                  <div id="map"></div>
+                </div>
+                  </div>
+            </div>
+
+                <div class="row">
+                    <p>The below charts show the uninsured rate & deaths
+                        for 2010 and 2015.</p>
+                    <div class="col-md-2">
+                        <div class="dropdown-state">
+                            <h5>Select a State:</h5>
+                            <select id="selDataset"
+                                onchange="optionChanged(this.value)"></select>
+                        </div>
+                    </div>
+                    <br></br>
+                <div class="col-md-12">
+                    <br></br>
+                    <div class="fig">Figure 2.</div>
                     <div id="bar"></div>
 
-                    <!-- Leaflet JavaScript -->
-                    <script
-                        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-                    <!-- API key -->
-                    <script type="text/javascript" src="../static/js/config.js"></script>
-                    <!-- D3 JavaScript -->
-                    <script type="text/javascript"
-                        src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-                    <script type="text/javascript"
-                        src="https://d3js.org/d3.v5.min.js"></script>
-                    <!--Plotly-->
-                    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-                    <!-- Our JavaScript -->
-                    <script type="text/javascript" src="../static/js/chart.js"></script>
-                    <!-- <script type="text/javascript" src="../static/js/charts_enhanced.js"></script> -->
+                    <br></br>
+                <div class="fig">Figure 3. </div>
+                <div id="bar"></div>
+            </div>
 
-                    <!-- <script type="text/javascript" src="../static/js/logic.js"></script> -->
-                </body>
-            </html>
+            <div class="col-md-5">
+                <div id="bar1"></div>
+            </div>
+        </div>
+
+        <div class="source">Sources:
+            <p> - Centers for Disease Control and Prevention -
+                https://wonder.cdc.gov/lbd-current.html</p>
+            <p> - US Department of Health and Human Services and US
+                Census Bureau -
+                https://www.kaggle.com/hhs/health-insurance</p>
+        </div>
+
+        <!-- Leaflet JavaScript -->
+        <script
+            src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!-- API key -->
+        <script type="text/javascript" src="../static/js/config.js"></script>
+        <!-- D3 JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <script type="text/javascript"
+            src="https://d3js.org/d3.v5.min.js"></script>
+        <!--Plotly-->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <!-- Our JavaScript -->
+        <script type="text/javascript" src="../static/js/chart.js"></script>
+        <script type="text/javascript" src="../static/js/us-states.js"></script>
+        <script type="text/javascript" src="../static/js/choromap.js"></script>
+    </body>
+</html>
