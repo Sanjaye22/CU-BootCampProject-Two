@@ -19,32 +19,22 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-# # Set route
-# @app.route('/')
-# def index():
-#     return "please visit the api routes"
-
 @app.route('/api/acadata')
 @cross_origin()
 def aca_data():
     cs_info = [doc for doc in db.acadata.find({}, {'_id': False})]
-    # cs_info_format = {"data": cs_info[0]}
-    # print(cs_info)
     return jsonify(cs_info)
     
 @app.route('/api/acadataCharts')
 @cross_origin()
 def aca_data_chart():
     cs_info = [doc for doc in db.acadatacharts.find({}, {'_id': False})]
-    # cs_info_format = {"data": cs_info[0]}
-    # print(cs_info)
     return jsonify(cs_info[0])
 
 @app.route('/api/states')
 @cross_origin()
 def states():
     cs_status = [doc for doc in db.usstates.find({}, {'_id': False})]
-    # cs_status_format = {"data": cs_status[0]}
     return jsonify(cs_status)
 
 
