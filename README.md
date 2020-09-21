@@ -2,7 +2,7 @@
 For this project, our team explored datasets from the CDC and HHS related to the the Affortable Care Act (ACA) and infant mortality rate.  
 We utilized two CSVs, one already predownloaded from Kaggle, and the other exported and converted from JSON to a CSV file.
 
-Two CSV files included the following information from the dates 04/26/16-04/25/17:
+Two CSV files included data from the following:
 * HHS Uninsured Rate
 * CDC State Infant Mortality Rate
 
