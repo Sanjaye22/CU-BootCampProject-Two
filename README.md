@@ -18,5 +18,6 @@ The following sources for our datasets used:
 There were limitations in that our data only examined 2010 & 2015 and not the entire 5 year span -- limiting our graph selection. 
 By cleaning the datasets with pandas, incorporating Mongodb and Javascript, we created an interactive html that showcases uninsured rates and infant mortality according to state.
 
+
 ## Team Members: 
 Susan Jessop, Anjelica Ramsey, Sanjaye Thomas
